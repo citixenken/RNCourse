@@ -8,6 +8,7 @@ export default function App() {
   function goalInputHandler(enteredText) {
     setEnteredGoalText(enteredText);
   }
+
   function addGoalHandler() {
     // setCourseGoals([...courseGoals, enteredGoalText]); //would've worked too!
     setCourseGoals((currentCourseGoals) => [
@@ -22,6 +23,7 @@ export default function App() {
         <TextInput
           style={styles.textInput}
           placeholder="Your course goal!"
+          value={enteredGoalText}
           onChangeText={goalInputHandler}
         />
         <Button title="Add Goal" onPress={addGoalHandler} />
