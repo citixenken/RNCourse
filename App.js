@@ -6,7 +6,7 @@ export default function App() {
       <View>
         <Text>Hello there, @citixenken!</Text>
       </View>
-      <Text>Welcome to this RN Primer Course!</Text>
+      <Text style={styles.text}>Welcome to this RN Primer Course!</Text>
       <Button title="Get Started!" />
     </View>
   );
@@ -18,5 +18,12 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+  },
+  text: {
+    margin: 18,
+    borderWidth: 4,
+    borderColor: "teal",
+    padding: 18,
+    borderRadius: 32,
   },
 });
